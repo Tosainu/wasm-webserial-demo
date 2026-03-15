@@ -1,0 +1,8 @@
+@import 'tailwindcss';
+@plugin 'daisyui' {
+  themes: corporate --default;
+}
+
+@theme {
+  --color-darkgray: #3f434a;
+}

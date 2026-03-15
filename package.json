@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "build": "webpack",
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write .",
+    "serve": "webpack serve"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.2.1",
+    "@wasm-tool/wasm-pack-plugin": "^1.7.0",
+    "css-loader": "^7.1.4",
+    "daisyui": "^5.5.19",
+    "html-webpack-harddisk-plugin": "^2.0.0",
+    "html-webpack-plugin": "^5.6.6",
+    "postcss": "^8.5.8",
+    "postcss-loader": "^8.2.1",
+    "prettier": "^3.8.1",
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "style-loader": "^4.0.0",
+    "tailwindcss": "^4.2.1",
+    "wasm-pack": "^0.14.0",
+    "webpack": "^5.105.4",
+    "webpack-cli": "^7.0.0",
+    "webpack-dev-server": "^5.2.3"
+  }
+}

@@ -1,0 +1,58 @@
+[package]
+name = "wasm-webserial-demo"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies.futures]
+version = "0.3.32"
+default-features = false
+features = [
+  "async-await",
+  "std",
+]
+
+[dependencies.js-sys]
+version = "0.3.91"
+
+[dependencies.wasm-bindgen]
+version = "0.2.114"
+
+[dependencies.wasm-bindgen-futures]
+version = "0.4.64"
+
+[dependencies.pin-project-lite]
+version = "0.2.17"
+
+[dependencies.web-sys]
+version = "0.3.91"
+features = [
+  "AddEventListenerOptions",
+  "Document",
+  "DocumentFragment",
+  "Element",
+  "Event",
+  "File",
+  "FileSystemCreateWritableOptions",
+  "FileSystemFileHandle",
+  "FileSystemWritableFileStream",
+  "HtmlButtonElement",
+  "HtmlInputElement",
+  "HtmlOptionElement",
+  "HtmlSelectElement",
+  "HtmlTemplateElement",
+  "Navigator",
+  "Node",
+  "ReadableStream",
+  "ReadableStreamDefaultReader",
+  "ReadableStreamReaderMode",
+  "SaveFilePickerOptions",
+  "Serial",
+  "SerialOptions",
+  "SerialPort",
+  "SerialPortInfo",
+  "WellKnownDirectory", # https://github.com/wasm-bindgen/wasm-bindgen/pull/5039
+  "Window",
+]
