@@ -15,9 +15,10 @@ jobs:
         with:
           node-version: 25.8.1
           package-manager-cache: false
-      - run: npm ci
-      - run: npx wasm-pack build --target web
-      - run: npx vite build
+      - run: corepack enable
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm wasm-pack build --target web
+      - run: pnpm vite build
       - uses: actions/upload-artifact@v7.0.0
         with:
           name: &build-artifact-name dist
@@ -28,8 +29,9 @@ jobs:
     steps:
       - uses: actions/checkout@v6.0.2
       - *actions-setup-node
-      - run: npm ci
-      - run: npx prettier --check .
+      - run: corepack enable
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm prettier --check .
 
   cargo-fmt:
     runs-on: ubuntu-24.04
