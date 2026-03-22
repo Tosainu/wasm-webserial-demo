@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Wasm × Web Serial × File System Access</title>
+    <link href="/index.css" rel="stylesheet" />
   </head>
   <body>
     <nav class="navbar bg-darkgray px-0 text-white">
@@ -114,5 +115,10 @@
         </template>
       </div>
     </div>
+
+    <script type="module">
+      import init from './pkg';
+      init().catch(console.error);
+    </script>
   </body>
 </html>
