@@ -71,7 +71,7 @@ jobs:
         with:
           name: *build-artifact-name
       - uses: actions/configure-pages@v6.0.0
-      - uses: actions/upload-pages-artifact@v4.0.0
+      - uses: actions/upload-pages-artifact@v5.0.0
         with:
           path: .
       - uses: actions/deploy-pages@v5.0.0
