@@ -26,7 +26,7 @@ jobs:
         if: steps.cache-cargo.outputs.cache-hit != 'true'
       - run: wasm-pack build --target web
       - run: pnpm vite build
-      - uses: actions/upload-artifact@v7.0.0
+      - uses: actions/upload-artifact@v7.0.1
         with:
           name: &build-artifact-name dist
           path: dist
