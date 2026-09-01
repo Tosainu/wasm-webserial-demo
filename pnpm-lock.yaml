@@ -12,8 +12,8 @@ importers:
         specifier: ^4.3.3
         version: 4.3.3(vite@8.2.2(jiti@2.7.0))
       daisyui:
-        specifier: ^5.7.7
-        version: 5.7.7
+        specifier: ^5.7.22
+        version: 5.7.22
       prettier:
         specifier: ^3.9.6
         version: 3.9.6
@@ -241,8 +241,8 @@ packages:
     peerDependencies:
       vite: ^5.2.0 || ^6 || ^7 || ^8
 
-  daisyui@5.7.7:
-    resolution: {integrity: sha512-k3fza99NburOj18SGqMmvMOoIP4iSKkw4PbaE8gCxNOvwoNdEg4HlKgNJjsh+00RijMVKNgOTNqw42FfOT5Ukw==}
+  daisyui@5.7.22:
+    resolution: {integrity: sha512-pYii+2NCN0+OIL6Lpuc054LK0QJeNv+GRK9UzN1GRmjdYhYO6WFl0QLoj5oPcitPD7o+okiiI0SKFkn641TxmA==}
 
   detect-libc@2.1.2:
     resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
@@ -701,7 +701,7 @@ snapshots:
       tailwindcss: 4.3.3
       vite: 8.2.2(jiti@2.7.0)
 
-  daisyui@5.7.7: {}
+  daisyui@5.7.22: {}
 
   detect-libc@2.1.2: {}
 
